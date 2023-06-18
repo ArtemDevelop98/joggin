@@ -1,4 +1,6 @@
 @media( max-width: 991px)
+    *
+        pointer-events: none
     .header
         justify-content: space-around
         &__official
@@ -11,6 +13,11 @@
                 text-align: center
                 a
                     display: block
+    .carusel
+        padding: 50px 0
+        &__pulse
+            width: 100%
+
 @media( max-width: 767px)
     .promo
         padding: 21px 0 30px 0
@@ -28,11 +35,22 @@
         &__descr
             margin-top: 5px
     .consultation
+        .form
+            display: block
+            margin: 0 auto
         &__Justfill
             display: none
         .title_consul
                 text-align: center
                 font-size: 36px
+    .catalog
+        &__tabs
+            margin-top: 30px
+        &__tab
+            width: 150px
+            margin: none
+            font-size: 14px
+
 @media( max-width: 576px)
     .promo
         min-height: 200px
@@ -56,3 +74,25 @@
                 width: 250px
                 height: 45px
                 font-size: 14px
+    .catalog
+        &__tabs
+            flex-direction: column
+            align-items: center
+
+        &__tab
+            width: 80%
+            margin-bottom: 5px
+            transform: none
+            div
+                transform: none
+        &__content
+            margin-top: 30px
+    .comment
+        flex-direction: column
+        &__photo
+            margin: 0 auto
+        &__name,&__number,&__text
+            text-align: center
+        &__name
+            margin-top: 5px
+
