@@ -1,6 +1,7 @@
 @media( max-width: 991px)
-    *
-        pointer-events: none
+    .button:hover
+        color: #fff
+        background-color: $main-color
     .header
         justify-content: space-around
         &__official
@@ -35,9 +36,8 @@
         &__descr
             margin-top: 5px
     .consultation
-        .form
-            display: block
-            margin: 0 auto
+        .feed-form
+            margin: 25px auto
         &__Justfill
             display: none
         .title_consul
@@ -95,4 +95,19 @@
             text-align: center
         &__name
             margin-top: 5px
+    .footer__info
+        display: block
+        position: static
+        width: 100%
+        margin: 0 auto
+        transform: translateX(0)
+    .modal
+        width: 270px
+        min-height: 300px
+        &__close
+            top: 5px
+            right: 3px
+        .feed-form
+            width: 100%
+            
 

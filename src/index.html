@@ -24,7 +24,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+380000000000" class="header__phone">+38 (000) 000-00-00</a>
-                    <button class="button">заказать звонок</button>
+                    <button data-modal="consultation" class="button">заказать звонок</button>
                 </div>
             </header>
             <div class="promo__wrapper">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="promo__button">
-                    <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+                    <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
                     <div class="link">
                         или
                         <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -159,7 +159,7 @@
                 <div class="catalog-item__wrapper">
                     <div class="catalog-item__main catalog-item__main_active">
                        <img src="img/pulsometr.png" alt="img" class="catalog-item__img"> 
-                       <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                       <div class="catalog-item__subtitle">Пульсометр Suunto M2</div>
                        <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                        <a href="#" class="catalog-item__link">подробнее</a>
                     </div>
@@ -219,7 +219,7 @@
                 <div class="catalog-item__wrapper">
                     <div class="catalog-item__main catalog-item__main_active">
                        <img src="img/pulsometr.png" alt="img" class="catalog-item__img"> 
-                       <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                       <div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
                        <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                        <a href="#" class="catalog-item__link">подробнее</a>
                     </div>
@@ -477,6 +477,40 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам через 10 минут</div>
+            <form action="#" class="feed-form feed-form_mt25">
+                <input required name="name" placeholder="Ваше имя" type="text" ></input>
+                <input required name="phone" placeholder="Ваш телефон" type="number" ></input>
+                <input required name="e-mail" placeholder="Ваш E-mail" type="email" ></input>
+
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form action="#" class="feed-form feed-form_mt25">
+                <input required name="name" placeholder="Ваше имя" type="text" ></input>
+                <input required name="phone" placeholder="Ваш телефон" type="number" ></input>
+                <input required name="e-mail" placeholder="Ваш E-mail" type="email" ></input>
+
+                <button class="button button_submit">купить</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
